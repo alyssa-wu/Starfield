@@ -30,6 +30,7 @@ void mouseClicked(){
   for(int i = 0; i < dit.length; i++){
     dit[i].reset();
    }
+   
 }
 
 class Particle
@@ -43,8 +44,8 @@ class Particle
     //myY = mouseY;
     myAngle = Math.random()*2*Math.PI;
     mySpeed = Math.random()*10;
-    myColor = color((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
-    //myColor = (255);
+    //myColor = color((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
+    myColor = color((int)(Math.random()*256), 0, (int)(Math.random()*256));
   }
   void move()
   {
@@ -63,7 +64,7 @@ class Particle
     myY = mouseY;
     myAngle = Math.random()*2*Math.PI;
     mySpeed = Math.random()*10;
-    myColor = color((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
+    myColor = color((int)(Math.random()*256), 0, (int)(Math.random()*256));
   }
 }
 
@@ -76,7 +77,7 @@ class OddballParticle extends Particle //Don't need to redeclare variables
     //myY = mouseY;
     myAngle = Math.random()*2*Math.PI;
     mySpeed = Math.random()*10;
-    myColor = color((int)(Math.random()*256), (int)(Math.random()*256));
+    myColor = color(0,(int)(Math.random()*256), (int)(Math.random()*126));
   }
   void move()
   {
@@ -94,6 +95,6 @@ class OddballParticle extends Particle //Don't need to redeclare variables
     myY = mouseY;
     myAngle = Math.random()*2*Math.PI;
     mySpeed = Math.random()*10;
-    myColor = color((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
+    myColor = color(0, (int)(Math.random()*256), (int)(Math.random()*126));
   }
 }
